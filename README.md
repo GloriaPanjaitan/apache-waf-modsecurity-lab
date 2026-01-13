@@ -23,6 +23,7 @@ All configurations and tests were performed in a controlled environment and vali
 
 ### 1. Apache Status Verification
 
+<img src="Screenshot/Status.png" width="100%">
 Before deploying security controls, the Apache service status was verified to ensure the web server was running correctly.
 
 **Purpose:**
@@ -32,6 +33,9 @@ Before deploying security controls, the Apache service status was verified to en
 ---
 
 ### 2. ModSecurity Installation and Activation
+
+<img src="Screenshot/install-mod-security2.png" width="100%">
+<img src="Screenshot/Activation.png" width="100%">
 
 ModSecurity was installed and enabled as an Apache module to act as a Web Application Firewall.
 
@@ -56,7 +60,7 @@ When a user attempted to manipulate the parameter using suspicious characters, t
 
 **Evidence:**
 
-![SQL Injection Blocked](Screenshots/sql-injection-blocked.png)
+<img src="Screenshot/SQL-i.png" width="100%">
 
 ---
 
@@ -75,7 +79,7 @@ When a request originated from a blocked IP, the server returned:
 
 **Evidence:**
 
-![IP Restriction](Screenshots/ip-restriction.png)
+<img src="Screenshot/Access.png" width="100%">
 
 ---
 
